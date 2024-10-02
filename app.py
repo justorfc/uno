@@ -35,7 +35,7 @@ st.plotly_chart(fig)
 
 # Crear el gráfico KDE
 fig, ax = plt.subplots()
-sns.kdeplot(housing['median_house_value'], ax=ax, shade=True, color='skyblue')
+sns.kdeplot(housing['median_house_value'], ax=ax, fill=True, color='skyblue')
 ax.set_title('Estimación de Densidad del Kernel de los Valores Medianos de las Casas en Boston')
 ax.set_xlabel('Valor Mediano de la Casa')
 ax.set_ylabel('Densidad')
